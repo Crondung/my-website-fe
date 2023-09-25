@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Hintergrundkreis in der Mitte des SVGs -->
+  <circle cx="50" cy="50" r="50" fill="#3f51b5" />
+
+  <!-- Dreiecke, die vor dem Kreis platziert sind -->
+  <polygon points="25,70 50,25 75,70" fill="none" stroke="white" stroke-width="4"/>
+</svg>
