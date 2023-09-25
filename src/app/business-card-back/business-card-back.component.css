@@ -1,0 +1,9 @@
+.container {
+  font-family: "zilla slab", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0 auto;
+  height: 100%;
+  color: #909ad9b9;
+  padding-top: 5%;
+}

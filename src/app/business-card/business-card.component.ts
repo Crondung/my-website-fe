@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
 })
 export class BusinessCardComponent {
   isFlipped = false;
+  backCardVisits = 0;
 
   onCardClick(event: MouseEvent) {
     let target: HTMLElement | null = event.target as HTMLElement;
@@ -20,6 +21,7 @@ export class BusinessCardComponent {
       }
       target = target.parentElement;
     }
+    if (!this.isFlipped) this.backCardVisits++;
     this.isFlipped = !this.isFlipped;
   }
 }

@@ -1,10 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-business-card-back',
   templateUrl: './business-card-back.component.html',
-  styleUrls: ['./business-card-back.component.css']
+  styleUrls: ['./business-card-back.component.css'],
 })
 export class BusinessCardBackComponent {
-
+  @Input()
+  visits: number = 0;
 }
