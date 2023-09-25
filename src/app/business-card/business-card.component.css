@@ -9,7 +9,11 @@
   transition: all 0.8s ease;
 }
 
-.card:hover {
+/* .card:hover {
+  transform: rotateY(180deg);
+} */
+
+.card.flipped {
   transform: rotateY(180deg);
 }
 
