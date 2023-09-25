@@ -1,0 +1,43 @@
+/* .example-spacer {
+  flex: 1 1 auto;
+}
+
+.nav-item {
+  margin-left: 4vh;
+  margin-right: 4vh;
+}
+
+.logo {
+  
+  height: auto;
+  margin-right: 10px; 
+}
+
+app-hero {
+  display: block;
+  margin: 0 auto; 
+  padding-top: 75px; 
+}
+
+.hero-text {
+  padding-top: 75px; 
+  align-content: center;
+  width: 50%;
+  margin: auto;
+  border: 1px solid red;
+}
+
+h1 {
+  border: 1px solid green;
+}
+ */
+
+.main-container {
+  position: absolute;
+  width: 40%;
+  height: 320px;
+  background: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

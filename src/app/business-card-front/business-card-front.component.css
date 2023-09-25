@@ -1,0 +1,39 @@
+.container {
+  font-family: "zilla slab", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0 auto;
+  height: 100%;
+  color: #909ad9b9;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  margin-left: 15%;
+}
+
+.content {
+  margin-right: 10%;
+}
+
+.icon-container {
+  width: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon-container a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* .icon-container a:hover {
+  color: #yourHoverColor; 
+}
+ */

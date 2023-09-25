@@ -1,0 +1,58 @@
+.card {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  transform-style: preserve-3d;
+  transition: all 0.8s ease;
+}
+
+.card:hover {
+  transform: rotateY(180deg);
+}
+
+.back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  overflow: hidden;
+  color: #333;
+  text-align: center;
+  transform: rotateY(180deg);
+  background-image: linear-gradient(
+    to right top,
+    #e0e2ed,
+    #e8e9f1,
+    #f0f0f6,
+    #f8f8fa,
+    #ffffff
+  );
+}
+
+.front {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  overflow: hidden;
+  color: #000;
+  background-image: linear-gradient(
+    to right top,
+    #e0e2ed,
+    #e8e9f1,
+    #f0f0f6,
+    #f8f8fa,
+    #ffffff
+  );
+}
+
+.rounded {
+  border-radius: 10px;
+}

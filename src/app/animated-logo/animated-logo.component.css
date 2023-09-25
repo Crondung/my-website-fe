@@ -1,0 +1,31 @@
+.hero {
+  position: relative;
+  width: 300px; /* Größe nach Bedarf anpassen */
+  margin: auto; /* Zentriert den Container */
+}
+
+.triangle {
+  display: inline-block;
+  width: 125px; /* Größe nach Bedarf anpassen */
+  height: 125px; /* Größe nach Bedarf anpassen */
+}
+
+@keyframes draw {
+  0% {
+    stroke-dashoffset: 300;
+  }
+  50% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: -300;
+  }
+}
+
+#triangle-up,
+#triangle-down {
+  stroke: rgba(63, 81, 181, 0.3);
+  stroke-dasharray: 300;
+  stroke-dashoffset: 300;
+  animation: draw 5s infinite linear;
+}

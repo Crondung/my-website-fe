@@ -1,0 +1,5 @@
+<!-- src/assets/logo.svg -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 210 110">
+  <polygon points="5,5 55,105 105,5" fill="none" stroke="white" stroke-width="5"/>
+  <polygon points="105,105 155,5 205,105" fill="none" stroke="white" stroke-width="5"/>
+</svg>
