@@ -11,11 +11,20 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
-.logo {
-  margin-left: 15%;
+@media (max-width: 1000px) {
+  .flex {
+    flex-direction: column;
+  }
+  .logo {
+    margin-left: 0;
+    justify-content: center;
+  }
+  .content {
+    margin-right: 0;
+  }
 }
 
 .content {
@@ -34,6 +43,6 @@
 }
 
 /* .icon-container a:hover {
-  color: #yourHoverColor; 
+  color: #HoverColor; 
 }
  */
