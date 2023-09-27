@@ -1,7 +1,4 @@
 <div class="card" (click)="onCardClick($event)" [class.flipped]="isFlipped">
   <app-business-card-front class="front rounded"></app-business-card-front>
-  <app-business-card-back
-    [visits]="backCardVisits"
-    class="back rounded"
-  ></app-business-card-back>
+  <app-business-card-back class="back rounded"></app-business-card-back>
 </div>

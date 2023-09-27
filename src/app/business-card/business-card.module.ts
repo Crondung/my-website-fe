@@ -6,6 +6,7 @@ import { NgIconsModule } from '@ng-icons/core';
 import { iconoirGithub, iconoirLinkedin, iconoirMail } from '@ng-icons/iconoir';
 import { BusinessCardBackComponent } from './business-card-back/business-card-back.component';
 import { BusinessCardFrontComponent } from './business-card-front/business-card-front.component';
+import { PokemonModule } from '../pokemon/pokemon.module';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { BusinessCardFrontComponent } from './business-card-front/business-card-
   imports: [
     CommonModule,
     NgIconsModule.withIcons({ iconoirMail, iconoirGithub, iconoirLinkedin }),
+    PokemonModule,
   ],
   exports: [BusinessCardComponent],
 })

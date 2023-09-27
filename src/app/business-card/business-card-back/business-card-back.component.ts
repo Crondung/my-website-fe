@@ -5,7 +5,4 @@ import { Component, Input } from '@angular/core';
   templateUrl: './business-card-back.component.html',
   styleUrls: ['./business-card-back.component.css'],
 })
-export class BusinessCardBackComponent {
-  @Input()
-  visits: number = 0;
-}
+export class BusinessCardBackComponent {}
