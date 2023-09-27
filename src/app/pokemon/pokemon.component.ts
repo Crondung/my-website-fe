@@ -1,4 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import {
+  Component,
+  Input,
+  OnChanges,
+  OnInit,
+  SimpleChanges,
+} from '@angular/core';
 import { Pokemon } from './pokemon.interface';
 import { PokemonService } from './pokemon.service';
 
@@ -7,13 +13,22 @@ import { PokemonService } from './pokemon.service';
   templateUrl: './pokemon.component.html',
   styleUrls: ['./pokemon.component.css'],
 })
-export class PokemonComponent implements OnInit {
+export class PokemonComponent implements OnInit, OnChanges {
+  @Input() visits = 0;
   pokemon?: Pokemon;
 
   constructor(private readonly service: PokemonService) {}
 
   ngOnInit(): void {
     this.initPokemon();
+  }
+
+  ngOnChanges(changes: SimpleChanges) {
+    if (changes['visits'].currentValue > 0) {
+      console.log('not the first change');
+
+      this.initPokemon();
+    }
   }
 
   private getRandomPokedexNumber(min: number = 1, max: number = 151): number {
