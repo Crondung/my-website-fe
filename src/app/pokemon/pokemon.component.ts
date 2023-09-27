@@ -24,9 +24,8 @@ export class PokemonComponent implements OnInit, OnChanges {
   }
 
   ngOnChanges(changes: SimpleChanges) {
-    if (changes['visits'].currentValue > 0) {
-      console.log('not the first change');
-
+    if (changes['visits'].currentValue > 1) {
+      this.pokemon = undefined;
       this.initPokemon();
     }
   }
