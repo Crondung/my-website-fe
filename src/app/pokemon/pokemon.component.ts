@@ -30,7 +30,7 @@ export class PokemonComponent implements OnInit, OnChanges {
     }
   }
 
-  private getRandomPokedexNumber(min: number = 1, max: number = 151): number {
+  private getRandomPokedexNumber(min: number = 1, max: number = 386): number {
     return Math.floor(Math.random() * (max - min + 1)) + min;
   }
 
